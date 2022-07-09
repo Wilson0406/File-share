@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sender | WShare - File Share</title>
+    <link rel="shortcut icon" href="./icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 
+</head>
+<body>
+    
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Share your files here securely</h2>
+                <div class="form-input">
+                    <button id="sender-start-con-btn">Create Room</button>
+                    <button id=""><a href="receiver.html" target="_blank">Receiver</a></button>
+                </div>
+                <div class="form-input" id="join-id">
+                    <!-- <b>Room ID</b>
+                    <span>000-000-000</span> -->
+                </div>
+            </div>
+        </div>
+        <div class="screen fs-screen">
+            <div class="file-input">
+                <label for="file-input">
+                    Click here to select files for sharing
+                </label>
+                <input type="file" id="file-input">
+            </div>
+            <div class="files-list">
+                <div class="title">Shared files:</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
+    <script type="text/javascript" src="https://wfileshare.herokuapp.com/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
